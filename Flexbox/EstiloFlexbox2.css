@@ -1,0 +1,25 @@
+.container{
+		  display:flex;
+		  background-color: #00F4C5;  
+		  width: 80%;
+		  flex-direction: column-reverse;
+		 align-items: center;
+		 justify-content: space-between;
+
+		}
+
+.container > div {
+		  background-color: #E54B08;
+		   width: 150px;
+		  margin: 10px;
+		   margin-bottom: 0px;
+		  text-align: center;
+		  line-height: 55px;
+		  font-size: 20px;
+		  color: #FFFFFF;
+
+		}
+.container > div:last-child {
+	margin-top: 0px;
+
+}

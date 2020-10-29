@@ -1,0 +1,35 @@
+.container {
+		  
+		  display: flex;
+		  flex-wrap: wrap;	
+		  background-color: #00F4C5;
+		  height: 200px;
+		  width: 800px;
+		  margin-bottom: 30px;
+		  align-content: flex-end;
+		  justify-content: space-between;
+
+		}
+
+
+.container > div {
+		  background-color: #E54B08;
+		   width: 150px;
+		  height: 45px;
+		  margin: auto;
+		  text-align: center;
+		  line-height: 55px;
+		  font-size: 20px;
+		  color: #FFFFFF;
+	
+		}
+#uno > div {
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+
+#dos{
+	display: flex;
+	flex-direction: row-reverse;
+}
