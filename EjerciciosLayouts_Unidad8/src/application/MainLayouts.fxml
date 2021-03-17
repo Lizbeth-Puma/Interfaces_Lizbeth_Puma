@@ -18,4 +18,39 @@
          </padding>
       </HBox>
    </top>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="107.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="30.3447265625">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Hyperlink text="Sales">
+               <VBox.margin>
+                  <Insets left="8.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink text="Marketing">
+               <VBox.margin>
+                  <Insets left="8.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink text="Distribution">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink text="Costs">
+               <VBox.margin>
+                  <Insets left="8.0" />
+               </VBox.margin>
+            </Hyperlink>
+         </children>
+      </VBox>
+   </left>
+
 </BorderPane>
