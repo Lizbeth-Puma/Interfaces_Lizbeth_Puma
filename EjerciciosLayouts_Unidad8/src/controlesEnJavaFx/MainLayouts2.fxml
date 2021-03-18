@@ -12,6 +12,7 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -135,13 +136,16 @@
                   <Font name="Arial Bold" size="12.0" />
                </font>
             </Label>
-            <TextField prefHeight="26.0" prefWidth="333.0" GridPane.columnIndex="1" />
-            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField prefHeight="26.0" prefWidth="333.0" promptText="(Name and surname)" GridPane.columnIndex="1" />
+            <PasswordField editable="false" text="123456789" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <RadioButton mnemonicParsing="false" text="Male" />
-                  <RadioButton contentDisplay="RIGHT" mnemonicParsing="false" text="Female">
+                  <RadioButton mnemonicParsing="false" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="opciones" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton contentDisplay="RIGHT" mnemonicParsing="false" text="Female" toggleGroup="$opciones">
                      <HBox.margin>
                         <Insets left="100.0" />
                      </HBox.margin>
@@ -150,8 +154,8 @@
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <CheckBox mnemonicParsing="false" text="Java" />
-                  <CheckBox mnemonicParsing="false" text="Electron">
+                  <CheckBox allowIndeterminate="true" indeterminate="true" mnemonicParsing="false" text="Java" />
+                  <CheckBox allowIndeterminate="true" indeterminate="true" mnemonicParsing="false" text="Electron">
                      <HBox.margin>
                         <Insets left="110.0" />
                      </HBox.margin>
@@ -198,10 +202,10 @@
    <bottom>
       <AnchorPane prefHeight="72.0" prefWidth="750.0" BorderPane.alignment="BOTTOM_RIGHT">
          <children>
-            <FlowPane alignment="BOTTOM_RIGHT" layoutX="544.0" layoutY="11.0" prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <FlowPane alignment="BOTTOM_RIGHT" layoutX="544.0" layoutY="11.0" prefHeight="50.0" prefWidth="200.0" rowValignment="TOP" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
                <children>
-                  <Slider />
-                  <Button mnemonicParsing="false" text="Enviar" />
+                  <Slider blockIncrement="1.0" majorTickUnit="2.0" max="10.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="5.0" />
+                  <Button defaultButton="true" mnemonicParsing="false" text="Enviar" />
                </children>
             </FlowPane>
          </children>
